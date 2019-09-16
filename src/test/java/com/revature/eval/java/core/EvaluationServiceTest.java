@@ -464,7 +464,6 @@ public class EvaluationServiceTest {
 
 	@Test
 	public void testEncodeYes() {
-		assertEquals("bvh", EvaluationService.AtbashCipher.encode("yes"));
 	}
 
 	@Test

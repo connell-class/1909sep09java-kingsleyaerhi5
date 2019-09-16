@@ -13,6 +13,7 @@ public class EvaluationService {
 	 * @param string
 	 * @return
 	 */
+	
 	public String reverse(String string) {
 		char[] reversed = new char[string.length()];
 		for (int i = reversed.length - 1, j=0; i >= 0; i--, j++) {
@@ -30,8 +31,23 @@ public class EvaluationService {
 	 * @return
 	 */
 	public String acronym(String phrase) {
-		// TODO Write an implementation for this method declaration
-		return null;
+		String acronymic = phrase;
+		String[] words = acronymic.split(" ");
+		String Acr="";
+		for (int i=0; i<words.length; i++) {
+			//if (words[i]==" ") {
+				String a = words[i].toUpperCase();
+				//System.out.println(a.charAt(0));
+				Acr+=a.charAt(0);
+			//}
+		
+			
+		}
+		//String a=null;
+		//return new String(acronymic);
+		//System.out.println();
+		return Acr;
+		//return acronymic;
 	}
 
 	/**
@@ -539,6 +555,10 @@ public class EvaluationService {
 	public int solveWordProblem(String string) {
 		// TODO Write an implementation for this method declaration
 		return 0;
+	}
+	public static void main(String[] args) {
+		//System.out.println(reverse("example"));
+		
 	}
 
 }
